@@ -16,8 +16,8 @@ const Header = () => {
       });
   };
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div className='sticky-top'>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid">
           <Link class="navbar-brand" href="#">
             Advanture
