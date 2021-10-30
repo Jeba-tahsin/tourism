@@ -43,8 +43,8 @@ const Header = () => {
               <Link class="nav-link active" aria-current="page" to="/home">
                 Home
               </Link>
-              <Link class="nav-link" to="/home">
-                home
+              <Link class="nav-link" to="/manageBook">
+                ManageBook
               </Link>
               { loginUser?.email? <Link onClick={handleLogout} class="nav-link" to="/login">
                 logOut {''}{loginUser?.displayName}

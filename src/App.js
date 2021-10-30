@@ -6,6 +6,7 @@ import Booking from './Pages/Booking/Booking';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import ManageBook from './Pages/ManageBook/ManageBook';
 import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -33,6 +34,9 @@ function App() {
          <Route path='/addService'>
            <AddService></AddService>
          </Route>
+          <Route path='/manageBook'>
+            <ManageBook></ManageBook>
+          </Route>
           <Route path='*'>
            <NotFound></NotFound>
          </Route>
