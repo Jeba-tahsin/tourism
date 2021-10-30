@@ -1,14 +1,36 @@
 import React from 'react';
+import {BsFacebook} from 'react-icons/bs';
+import {FaInstagramSquare} from 'react-icons/fa';
+import {BsTwitter} from 'react-icons/bs';
+import {BsYoutube} from 'react-icons/bs';
+import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div>
-            <div className='mt-5 footer' style={{ padding:'10px'}}>
+        <div className='mt-5 footer' style={{ padding:'10px'}}>
             <h2>CONTACT US</h2>
-            <p>Road-2/A East Shibgonh Sylhet-300, Bangladesh</p>
-            <p>Cell:(+880) 0723 161 343</p>
-            <p>helpme@donation.com</p>
-        </div>
+            <p>Block-102/B Shibgonh Dhaka-200, Bangladesh</p>
+            <div className='pb-3 d-flex justify-content-center'>
+                <div className='pe-3 m-5'>
+                <BsFacebook/>
+                  <p>FACEBOOK</p>
+                </div>
+                <div className='pe-3 m-5'>
+                <FaInstagramSquare/>
+                <p>INSTAGRAM</p>
+                </div>
+                <div className='pe-3 m-5'>
+                <BsTwitter/>
+                <p>TWITTER</p>
+                </div>
+                <div className='pe-3 m-5'>
+                <BsYoutube/>
+                <p>YOUTUBE</p>
+                </div>
+            </div>
+            <div>
+                <small>2021 ©Copyright. All Rights Reserved</small>
+            </div>
         </div>
     );
 };

@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Tokyo",
+      "cost": "349",
+      "duration": "10 days",
+      "people": "9 persons",
+      "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus, beatae ad dignissimos sapiente aperiam voluptate earum et amet sequi iusto eveniet itaque dolorum, deleniti unde enim aut harum ipsa",
+      "img": "https://i.insider.com/5d26280921a86107bb51bd92?width=700"
+    },
+    {
+      "id": 2,
+      "name": "New York",
+      "cost": "499",
+      "duration": "5 days",
+      "people": "4 persons",
+      "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus, beatae ad dignissimos sapiente aperiam voluptate earum et amet sequi iusto eveniet itaque dolorum, deleniti unde enim aut harum ipsa",
+      "img": "https://media.nomadicmatt.com/3dayssinnyc.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Paris",
+      "cost": "649",
+      "duration": "7 days",
+      "people": "6 persons",
+      "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus, beatae ad dignissimos sapiente aperiam voluptate earum et amet sequi iusto eveniet itaque dolorum, deleniti unde enim aut harum ipsa",
+      "img": "https://media.istockphoto.com/photos/romantic-paris-with-tour-eiffel-picture-id155381519?b=1&k=20&m=155381519&s=170667a&w=0&h=EVepP_n0D5G34w28vw-hdI5Yzk-hJHy3tZBOHc-hWgg="
+      
+    },
+    {
+      "id": 4,
+      "name": "Maxico",
+      "cost": "570",
+      "duration": "6 days",
+      "people": "5 persons",
+      "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus, beatae ad dignissimos sapiente aperiam voluptate earum et amet sequi iusto eveniet itaque dolorum, deleniti unde enim aut harum ipsa",
+      "img": "https://ak-d.tripcdn.com/images/0220x1200081bxcmtF924_Z_550_412_R5_Q70_D.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Antique Europe",
+      "cost": "299",
+      "duration": "11 days",
+      "people": "10 persons",
+      "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus, beatae ad dignissimos sapiente aperiam voluptate earum et amet sequi iusto eveniet itaque dolorum, deleniti unde enim aut harum ipsa",
+      "img": "https://static01.nyt.com/images/2021/06/16/us/16virus-briefing-europe-travel/merlin_187934703_ffb4e9d1-927d-402c-858a-b362601662fe-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+    },
+    {
+      "id": 6,
+      "name": "Pyramids",
+      "cost": "750",
+      "duration": "9 days",
+      "people": "8 persons",
+      "details": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus, beatae ad dignissimos sapiente aperiam voluptate earum et amet sequi iusto eveniet itaque dolorum, deleniti unde enim aut harum ipsa",
+      "img": "https://www.egypttoday.com/siteimages/Larg/77030.jpg"
+    }
+  ]
