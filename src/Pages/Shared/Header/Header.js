@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../Context/AuthProvider";
 import { getAuth, signOut } from "@firebase/auth";
+import {MdTour} from 'react-icons/md';
 
 const Header = () => {
     const [loginUser, setLoginUser] = useContext(AuthContext);
@@ -19,6 +20,9 @@ const Header = () => {
     <div className='sticky-top'>
       <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container-fluid">
+          <div className='pe-3 ps-4'>
+            <MdTour/>
+          </div>
           <Link class="navbar-brand" href="#">
             Advanture
           </Link>
