@@ -1,0 +1,4 @@
+.about:hover{
+    box-shadow: blue;
+    transform: scale(1.01);
+}

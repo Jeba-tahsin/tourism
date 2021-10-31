@@ -3,6 +3,9 @@ import './Guide.css';
 import person1 from "../../../images/p1.jpg";
 import person2 from "../../../images/p2.jpg";
 import person3 from "../../../images/p3.jpg";
+import person4 from "../../../images/p4.jpg";
+import person5 from "../../../images/p5.jpg";
+import person6 from "../../../images/p6.jpg";
 
 
 const Guide = () => {
@@ -21,7 +24,7 @@ const Guide = () => {
   </div>
   <div class="col">
     <div class="card image">
-      <img src={person2} class="card-img-top" alt="..."/>
+      <img src={person5} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zara smith</h5>
         <p class="card-text">Tour Guide</p>
@@ -33,6 +36,33 @@ const Guide = () => {
       <img src={person3} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Jhon arduc</h5>
+        <p class="card-text">Tour Guide</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card image">
+      <img src={person4} class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Zeba rahman</h5>
+        <p class="card-text">Tour Guide</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card image">
+      <img src={person2} class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Travis scot</h5>
+        <p class="card-text">Tour Guide</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card image">
+      <img src={person6} class="card-img-top" alt="..."/>
+      <div class="card-body">
+        <h5 class="card-title">Diya arduc</h5>
         <p class="card-text">Tour Guide</p>
       </div>
     </div>
