@@ -4,6 +4,7 @@ import "./Booking.css";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
 import axios from "axios";
+import {MdAttachMoney} from 'react-icons/md'
 
 const Booking = () => {
   const { id } = useParams();
@@ -24,7 +25,7 @@ const Booking = () => {
     const {name, cost, duration, img, people} = details;
     const bookingDetails = { ...data, name, cost, duration, img, people, bookingStatus: 'pending' };
     console.log(data);
-    axios.post("http://localhost:5000/purchesData", bookingDetails).then((res) => {
+    axios.post("https://quiet-beyond-69183.herokuapp.com/purchesData", bookingDetails).then((res) => {
       if (res.data.insertedId) {
         alert("Thank you!");
       }
@@ -35,15 +36,15 @@ const Booking = () => {
     <div className='container booking'>
       <div class="card mb-3 mt-5">
   <div class="row g-0">
-    <div class="col-md-4 imgStyle">
-      <img src={details?.img} class="img-fluid rounded-start" alt="..."/>
+    <div class="col-md-4 ">
+      <img src={details?.img} class="img-fluid rounded-start imgStyle" alt="..."/>
     </div>
     <div class="col-md-8">
-      <div class="card-body">
+      <div class="card-body fst-italic">
         <h5 class="card-title">{details?.name}</h5>
         <p class="card-text">{details?.details}</p>
-        <p class="card-text">Duration: {details?.duration}</p>
-        <p class="card-text">Cost: {details?.cost}</p>
+        <p class="card-text">Duration: {details?.duration}days</p>
+        <p class="card-text">Cost: <MdAttachMoney/>{details?.cost}</p>
         <p class="card-text">Max-people: {details?.people}</p>
       </div>
     </div>
@@ -74,9 +75,9 @@ const Booking = () => {
           placeholder='number'/>
       </div>
       {errors.exampleRequired && <span>This field is required</span>}
-      <input type="submit" value="Check Out" />
+      <input type="submit" value="Book now" />
     </form>
-</div> 
+      </div> 
     </div>
   );
 };

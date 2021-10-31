@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './ManageBook.css';
 
 const ManageBook = () => {
     const [manageBook, setManageBook] = useState([]);
@@ -11,7 +12,7 @@ const ManageBook = () => {
     console.log(manageBook);
     const handleDelete = (id) => {
       console.log(id)
-      fetch(`http://localhost:5000/deletePurches/${id}`, {
+      fetch(`https://quiet-beyond-69183.herokuapp.com/deletePurches/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -20,7 +21,7 @@ const ManageBook = () => {
         });
     };
     return (
-        <div className='container'>
+        <div className='container manageBooking'>
             <table class="table">
         <thead>
           <tr>

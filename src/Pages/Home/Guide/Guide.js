@@ -6,6 +6,7 @@ import person3 from "../../../images/p3.jpg";
 import person4 from "../../../images/p4.jpg";
 import person5 from "../../../images/p5.jpg";
 import person6 from "../../../images/p6.jpg";
+import {GrUserExpert} from 'react-icons/gr';
 
 
 const Guide = () => {
@@ -18,7 +19,9 @@ const Guide = () => {
       <img src={person1} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Alina topal</h5>
-        <p class="card-text">Tour Guide</p>
+        <p class="card-text">
+        <GrUserExpert/> Tour Guide
+        </p>
       </div>
     </div>
   </div>
@@ -27,7 +30,7 @@ const Guide = () => {
       <img src={person5} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zara smith</h5>
-        <p class="card-text">Tour Guide</p>
+        <p class="card-text"><GrUserExpert/> Tour Guide</p>
       </div>
     </div>
   </div>
@@ -36,7 +39,7 @@ const Guide = () => {
       <img src={person3} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Jhon arduc</h5>
-        <p class="card-text">Tour Guide</p>
+        <p class="card-text"><GrUserExpert/> Tour Guide</p>
       </div>
     </div>
   </div>
@@ -45,7 +48,7 @@ const Guide = () => {
       <img src={person4} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zeba rahman</h5>
-        <p class="card-text">Tour Guide</p>
+        <p class="card-text"><GrUserExpert/> Tour Guide</p>
       </div>
     </div>
   </div>
@@ -54,7 +57,8 @@ const Guide = () => {
       <img src={person2} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Travis scot</h5>
-        <p class="card-text">Tour Guide</p>
+        <p class="card-text"><GrUserExpert/>
+        Tour Guide</p>
       </div>
     </div>
   </div>
@@ -63,7 +67,7 @@ const Guide = () => {
       <img src={person6} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Diya arduc</h5>
-        <p class="card-text">Tour Guide</p>
+        <p class="card-text"><GrUserExpert/> Tour Guide</p>
       </div>
     </div>
   </div>

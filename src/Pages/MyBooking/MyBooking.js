@@ -7,7 +7,7 @@ const MyBooking = () => {
 
   const [orderList, setOrderList] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orderEmail?email=" + loginUser.email)
+    fetch("https://quiet-beyond-69183.herokuapp.com/orderEmail?email=" + loginUser.email)
       .then((res) => res.json())
       .then((data) => setOrderList(data));
   }, []);
@@ -20,7 +20,7 @@ const MyBooking = () => {
                 <div class="card  m-5">
                 <div class="row g-0 ">
                   <div class="col-md-4  imgStyle">
-                    <img src={purches?.img} class="img-fluid rounded-start" alt="..."/>
+                    <img src={purches?.img} style={{height:300}} class="img-fluid rounded-start" alt="..."/>
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
