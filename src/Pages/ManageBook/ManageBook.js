@@ -8,7 +8,7 @@ const ManageBook = () => {
         fetch('https://quiet-beyond-69183.herokuapp.com/purches')
          .then(res => res.json())
          .then(data => setManageBook(data));
-    }, []);
+    }, [manageBook]);
     console.log(manageBook);
     const handleDelete = (id) => {
       console.log(id)
