@@ -1,4 +1,9 @@
 .about:hover{
-    box-shadow: blue;
+    background-color: black;
+    color: blanchedalmond;
     transform: scale(1.01);
+}
+.now:hover{
+    background-color: rgb(113, 151, 113);
+    color: blanchedalmond;
 }

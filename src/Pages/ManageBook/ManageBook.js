@@ -4,7 +4,7 @@ const ManageBook = () => {
     const [manageBook, setManageBook] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/purches')
+        fetch('https://quiet-beyond-69183.herokuapp.com/purches')
          .then(res => res.json())
          .then(data => setManageBook(data));
     }, []);

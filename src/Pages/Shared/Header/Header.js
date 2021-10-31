@@ -18,13 +18,13 @@ const Header = () => {
   };
   return (
     <div className='sticky-top'>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
-          <div className='pe-3 ps-4'>
+          <div className=' ps-4 text-warning'>
             <MdTour/>
           </div>
           <Link class="navbar-brand" href="#">
-            Advanture
+            <span className='text-warning fst-italic'>Advanture</span>
           </Link>
           <button
             class="navbar-toggler"
@@ -39,18 +39,23 @@ const Header = () => {
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-            <div class="navbar-nav">
-              <Link class="nav-link active" aria-current="page" to="/home">
+            <div class="navbar-nav ">
+              <Link class="nav-link active text-light" aria-current="page" to="/home">
                 Home
               </Link>
-              <Link class="nav-link" to="/manageBook">
+              {loginUser?.email && <Link class="nav-link text-light" to="/manageBook">
                 ManageBook
-              </Link>
-              { loginUser?.email? <Link onClick={handleLogout} class="nav-link" to="/login">
+              </Link>}
+
+              {loginUser?.email && <Link class="nav-link text-light" to="/myBooking">
+                MyOrder
+              </Link>}
+
+              { loginUser?.email? <Link onClick={handleLogout} class="nav-link text-light" to="/login">
                 logOut {''}{loginUser?.displayName}
               </Link>
                  :
-                <Link class="nav-link" to="/login">
+                <Link class="nav-link text-light" to="/login">
                 login
               </Link>
               }

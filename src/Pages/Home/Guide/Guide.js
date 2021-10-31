@@ -11,10 +11,10 @@ import person6 from "../../../images/p6.jpg";
 const Guide = () => {
     return (
         <div className='container'>
-        <h2 className="text-success mt-5">MEET OUR EXPERTS</h2>
+        <h2 className="text-success mt-5 fst-italic fw-bold">Meet Our Experts</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
-    <div class="card">
+    <div class="card shadow">
       <img src={person1} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Alina topal</h5>
@@ -23,7 +23,7 @@ const Guide = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card image">
+    <div class="card image shadow">
       <img src={person5} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zara smith</h5>
@@ -32,7 +32,7 @@ const Guide = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card image">
+    <div class="card image shadow">
       <img src={person3} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Jhon arduc</h5>
@@ -41,7 +41,7 @@ const Guide = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card image">
+    <div class="card image shadow">
       <img src={person4} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zeba rahman</h5>
@@ -50,7 +50,7 @@ const Guide = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card image">
+    <div class="card image shadow">
       <img src={person2} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Travis scot</h5>
@@ -59,7 +59,7 @@ const Guide = () => {
     </div>
   </div>
   <div class="col">
-    <div class="card image">
+    <div class="card image shadow">
       <img src={person6} class="card-img-top" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Diya arduc</h5>
