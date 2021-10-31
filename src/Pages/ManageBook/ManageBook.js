@@ -9,6 +9,16 @@ const ManageBook = () => {
          .then(data => setManageBook(data));
     }, []);
     console.log(manageBook);
+    const handleDelete = (id) => {
+      console.log(id)
+      fetch(`http://localhost:5000/deletePurches/${id}`, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("delete successfully", data);
+        });
+    };
     return (
         <div className='container'>
             <table class="table">
@@ -17,7 +27,7 @@ const ManageBook = () => {
             <th scope="col">Name</th>
             <th scope="col">Phone</th>
             <th scope="col">Status</th>
-            <th scope="col">Cancel</th>
+            <th scope="col">Delete</th>
           </tr>
         </thead>
         <tbody>
@@ -25,8 +35,8 @@ const ManageBook = () => {
             <tr>
               <td>{booking?.userName}</td>
               <td>{booking?.phoneNumber}</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td>{booking?.bookingStatus}</td>
+              <td> <button onClick={()=> handleDelete(booking?._id)}>Delete</button> </td>
             </tr>
           ))}
           </tbody>

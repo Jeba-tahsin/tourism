@@ -44,11 +44,14 @@ const Header = () => {
                 Home
               </Link>
               {loginUser?.email && <Link class="nav-link text-light" to="/manageBook">
-                ManageBook
+                ManageBooking
               </Link>}
 
               {loginUser?.email && <Link class="nav-link text-light" to="/myBooking">
                 MyOrder
+              </Link>}
+              {loginUser?.email && <Link class="nav-link text-light" to="/addService">
+                AddService
               </Link>}
 
               { loginUser?.email? <Link onClick={handleLogout} class="nav-link text-light" to="/login">

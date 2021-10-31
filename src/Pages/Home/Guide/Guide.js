@@ -15,7 +15,7 @@ const Guide = () => {
         <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card shadow">
-      <img src={person1} class="card-img-top" alt="..."/>
+      <img src={person1} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Alina topal</h5>
         <p class="card-text">Tour Guide</p>
@@ -24,7 +24,7 @@ const Guide = () => {
   </div>
   <div class="col">
     <div class="card image shadow">
-      <img src={person5} class="card-img-top" alt="..."/>
+      <img src={person5} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zara smith</h5>
         <p class="card-text">Tour Guide</p>
@@ -33,7 +33,7 @@ const Guide = () => {
   </div>
   <div class="col">
     <div class="card image shadow">
-      <img src={person3} class="card-img-top" alt="..."/>
+      <img src={person3} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Jhon arduc</h5>
         <p class="card-text">Tour Guide</p>
@@ -42,7 +42,7 @@ const Guide = () => {
   </div>
   <div class="col">
     <div class="card image shadow">
-      <img src={person4} class="card-img-top" alt="..."/>
+      <img src={person4} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Zeba rahman</h5>
         <p class="card-text">Tour Guide</p>
@@ -51,7 +51,7 @@ const Guide = () => {
   </div>
   <div class="col">
     <div class="card image shadow">
-      <img src={person2} class="card-img-top" alt="..."/>
+      <img src={person2} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Travis scot</h5>
         <p class="card-text">Tour Guide</p>
@@ -60,7 +60,7 @@ const Guide = () => {
   </div>
   <div class="col">
     <div class="card image shadow">
-      <img src={person6} class="card-img-top" alt="..."/>
+      <img src={person6} class="card-img-top img-fluid" alt="..."/>
       <div class="card-body">
         <h5 class="card-title">Diya arduc</h5>
         <p class="card-text">Tour Guide</p>

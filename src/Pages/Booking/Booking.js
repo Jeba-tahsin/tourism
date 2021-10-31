@@ -21,9 +21,10 @@ const Booking = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    const bookingDetails = { ...data, ...details };
+    const {name, cost, duration, img, people} = details;
+    const bookingDetails = { ...data, name, cost, duration, img, people, bookingStatus: 'pending' };
     console.log(data);
-    axios.post("https://quiet-beyond-69183.herokuapp.com/purches", bookingDetails).then((res) => {
+    axios.post("http://localhost:5000/purchesData", bookingDetails).then((res) => {
       if (res.data.insertedId) {
         alert("Thank you!");
       }
