@@ -1,5 +1,6 @@
 import React from 'react';
 import AddService from '../AddService/AddService';
+import ReviewPage from '../Home/ReviewPage/ReviewPage';
 import ManageBook from '../ManageBook/ManageBook';
 import MyBooking from '../MyBooking/MyBooking';
 
@@ -94,14 +95,14 @@ const DashBoard = () => {
         >
           <AddService></AddService>
         </div>
-        {/* <div
+        <div
           class="tab-pane fade"
           id="review"
           role="tabpanel"
           aria-labelledby="review-tab"
         >
           <ReviewPage></ReviewPage>
-        </div> */}
+        </div>
       </div>
     </div>
     );

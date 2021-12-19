@@ -5,6 +5,7 @@ import AddService from './Pages/AddService/AddService';
 import Booking from './Pages/Booking/Booking';
 import DashBoard from './Pages/DashBoard/DashBoard';
 import Home from './Pages/Home/Home/Home';
+import ReviewPage from './Pages/Home/ReviewPage/ReviewPage';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import ManageBook from './Pages/ManageBook/ManageBook';
@@ -45,6 +46,10 @@ function App() {
           <PrivateRoute path='/dashBoard'>
             <DashBoard></DashBoard>
           </PrivateRoute>
+          <PrivateRoute path='/review'>
+            <ReviewPage></ReviewPage>
+          </PrivateRoute>
+          
           <Route path='*'>
            <NotFound></NotFound>
          </Route>

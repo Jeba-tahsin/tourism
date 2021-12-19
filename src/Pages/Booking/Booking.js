@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import "./Booking.css";
 import { useForm } from "react-hook-form";
 import { AuthContext } from "../../Context/AuthProvider";
@@ -15,7 +15,7 @@ const Booking = () => {
       .then((res) => res.json())
       .then((data) => setDetails(data));
   }, []);
- 
+  const history = useHistory();
   const {
     register,
     handleSubmit,
@@ -27,7 +27,7 @@ const Booking = () => {
     console.log(data);
     axios.post("https://quiet-beyond-69183.herokuapp.com/purchesData", bookingDetails).then((res) => {
       if (res.data.insertedId) {
-        alert("Thank you!");
+        alert(`Thank you! Share your feedback! ${history.push('/review')}`);
       }
     });
   };
