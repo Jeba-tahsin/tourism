@@ -3,6 +3,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import AddService from './Pages/AddService/AddService';
 import Booking from './Pages/Booking/Booking';
+import DashBoard from './Pages/DashBoard/DashBoard';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
@@ -40,6 +41,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path='/myBooking'>
             <MyBooking></MyBooking>
+          </PrivateRoute>
+          <PrivateRoute path='/dashBoard'>
+            <DashBoard></DashBoard>
           </PrivateRoute>
           <Route path='*'>
            <NotFound></NotFound>
